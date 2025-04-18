@@ -7,7 +7,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  description: ArgoCD self management
+  description: Samples Application
   # Allow manifests to deploy from any Git repos
   sourceRepos:
   - '*'
@@ -28,5 +28,6 @@ spec:
   - group: ''
     kind: NetworkPolicy
   # Deny all namespaced-scoped resources from being created, except for Deployment and StatefulSet
-  namespaceResourceWhitelist: [] 
+  namespaceResourceWhitelist:
+  - '*' 
   roles: []
