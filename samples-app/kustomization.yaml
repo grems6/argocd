@@ -6,3 +6,4 @@ resources:
   - namespace.yaml
   - mysql-deployment.yaml
   - wordpress-deployment.yaml
+  - ingress.yaml
