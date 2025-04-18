@@ -6,7 +6,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: samples
+  project: infrastructure
   source:
     repoURL: https://github.com/grems6/argocd.git
     path: cluster
