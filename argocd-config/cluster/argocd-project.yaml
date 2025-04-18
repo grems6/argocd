@@ -18,7 +18,8 @@ spec:
   # Allow everything
   clusterResourceWhitelist:
   - group: '*'
-    king: '*'
+    kind: '*'
+  clusterResourceBlacklist: []
   # Allow all namespaced-scoped
   namespaceResourceBlacklist: []
   # 
