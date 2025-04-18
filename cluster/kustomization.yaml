@@ -1,2 +1,4 @@
 resources:
   - gp3-storage-class.yaml
+  - ingress-param.yaml
+  - ingress-class.yaml
