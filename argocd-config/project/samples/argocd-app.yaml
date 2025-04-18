@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: samples
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: samples
+  source:
+    repoURL: https://github.com/grems6/argocd.git
+    path: samples-app
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: samples
+  syncPolicy:
+    automated:
+      selfHeal: true
